@@ -1,0 +1,38 @@
+#main-para {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#search-container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#master-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* left: -30%; */
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+#info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  max-width: 40%;
+  /* left: -30%; */
+  /* margin-right: auto; */
+  border: 1px solid black;
+}
+
+#name-paragraph {
+  border: 1px solid black;
+}
+
+#evolves-from-paragraph {
+}
