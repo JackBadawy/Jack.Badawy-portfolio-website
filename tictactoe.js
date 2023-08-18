@@ -127,7 +127,10 @@ function winChecker(a) {
       gridStats[6][3] === "X") ||
     (gridStats[3][3] === "X" &&
       gridStats[4][3] === "X" &&
-      gridStats[5][3] === "X")
+      gridStats[5][3] === "X") ||
+    (gridStats[6][3] === "X" &&
+      gridStats[7][3] === "X" &&
+      gridStats[8][3] === "X")
   ) {
     console.log("you Win!!!");
     messageEl.textContent = "You Win!!!";
@@ -153,7 +156,10 @@ function winChecker(a) {
       gridStats[6][3] === "O") ||
     (gridStats[3][3] === "O" &&
       gridStats[4][3] === "O" &&
-      gridStats[5][3] === "O")
+      gridStats[5][3] === "O") ||
+    (gridStats[6][3] === "O" &&
+      gridStats[7][3] === "O" &&
+      gridStats[8][3] === "O")
   ) {
     console.log("You Lose");
     messageEl.textContent = "You Lose!!!";
