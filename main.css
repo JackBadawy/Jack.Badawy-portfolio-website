@@ -1,12 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@700&display=swap");
+
+/* @font-face {
+  font-family: Roboto;
+  src: url();
+} */
+
 * {
   padding: 0;
   margin: 0;
 }
 
+:root {
+  /*  Colours */
+  --header_clr: #dca99e;
+  --nav_clr: #000;
+  --body_clr: #fbf5ef; /* bone white */
+  --hr_clr: #f5ede5;
+}
+
+h1 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+}
+
+h2,
+h3 {
+  padding-bottom: 0.5rem;
+}
+
+h4 {
+  padding: 2px;
+  padding-top: 5px;
+  text-decoration: underline;
+}
+
 header {
-  background-color: rgb(163, 157, 178);
+  background-color: var(--header_clr);
   display: flex;
   flex-wrap: wrap;
+  min-height: 9vh;
+  position: relative;
+  font-family: roboto;
+  font-size: larger;
 }
 
 nav {
@@ -16,22 +54,66 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: var(--nav_clr);
+  min-height: 25px;
+  max-height: 5vh;
+}
+
+#nav-button {
+  border-radius: 0%;
+  min-height: 25px;
+
+  background-color: var(--nav_clr);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+#nav-button:hover {
+  background-color: #383838;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
 }
 
 h1 {
   flex-basis: 100%;
 }
 
+#home-main {
+  display: block;
+  text-align: center;
+}
+
+body {
+  background-color: var(--body_clr);
+}
+
 main {
-  background-color: wheat; /* potentially delete all but backgorund color */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  margin-top: 1vh;
+  /* min-height: 80vh; /*consider making smaller */
 }
 
-footer {
+hr {
+  margin: 5vh;
+  /* color: var(--hr_clr);*/
+  height: 3px;
+  border: 1px;
+  background-color: var(--hr_clr);
+}
+
+/*footer {
   background-color: red;
+}*/
+
+#copy-paragraph {
+  margin-left: 2vh;
 }
 
 .ticbox {

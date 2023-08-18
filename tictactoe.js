@@ -4,15 +4,20 @@ messageEl.id = "message-el";
 mainEl.insertBefore(messageEl, mainEl.firstChild);
 let gridStats = Array.from(Array(9), () => new Array(4));
 let gridContainer;
-gridContainer = document.createElement("div");
-gridContainer.id = "grid-container";
-document
-  .getElementById("main-el")
-  .insertBefore(gridContainer, mainEl.nextSibling);
 
-initialize();
+gridContainerSetup();
+function gridContainerSetup() {
+  gridContainer = document.createElement("div");
+  gridContainer.id = "grid-container";
+  document
+    .getElementById("main-el")
+    .insertBefore(gridContainer, mainEl.nextSibling);
+
+  initialize();
+}
 
 function initialize() {
+  gridContainer = document.getElementById("grid-container");
   for (i = 0; i < gridStats.length; i++) {
     newDiv = document.createElement("div");
     newDiv.id = "s" + (i + 1);
@@ -30,9 +35,14 @@ function createGridContainer() {}
 
 function restartGame() {
   document.getElementById("grid-container").remove();
-  messageEl.textContent = undefined;
+  messageEl.textContent = "";
   gridStats = Array.from(Array(9), () => new Array(4));
-  initialize();
+  /* gridContainer = document.createElement("div");
+  gridContainer.id = "grid-container";
+  document
+    .getElementById("main-el")
+    .insertBefore(gridContainer, mainEl.nextSibling); */
+  gridContainerSetup();
 }
 
 function playersTurn() {
