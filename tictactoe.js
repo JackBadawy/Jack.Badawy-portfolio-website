@@ -25,6 +25,7 @@ function initialize() {
     gridContainer.insertBefore(newDiv, gridContainer.nextSibling);
     newP = document.createElement("p");
     newP.id = newDiv.id + "-text";
+    newP.classList.add("tic_text");
     newDiv.insertBefore(newP, newDiv.nextSibling);
     gridStats[i][2] = document.getElementById(`s${i + 1}-text`);
   }

@@ -12,18 +12,25 @@
 
 :root {
   /*  Colours */
-  --header_clr: #dca99e;
-  --nav_clr: #000;
-  --body_clr: #fbf5ef; /* bone white */
-  --hr_clr: #f5ede5;
+  /*--header_clr: #dca99e;*/
+  --header_clr: #d66afb;
+  --nav_clr: #68f7ff;
+  --btn_clr: #e9caff;
+  --btn_hover_clr: #ddc1f2;
+
+  --btn_txt_clr: #8030ba;
+  /* --body_clr: #fbf5ef; */ /* bone white */
+  --body_clr: #f9effb;
+  /* --hr_clr: #f5ede5; */
+  --hr_clr: #f5e4f8;
 }
 
 h1 {
   margin-top: 2vh;
   margin-bottom: 2vh;
   text-align: center;
-  padding: 10px;
-  font-size: 50px;
+  padding: 20px;
+  font-size: 60px;
 }
 
 h2,
@@ -55,31 +62,49 @@ nav {
   align-items: center;
   position: relative;
   background-color: var(--nav_clr);
-  min-height: 25px;
-  max-height: 5vh;
+  /* min-height: 10px;
+  max-height: 2vh; */
+  height: 5px;
+}
+
+.first_button {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.last_button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #nav-button {
-  border-radius: 0%;
-  min-height: 25px;
-
-  background-color: var(--nav_clr);
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  min-height: 30px;
+  border-color: var(--nav_clr);
+  background-color: var(--btn_clr);
+  border-left: 1px solid var(--nav_clr);
+  border-right: 1px solid var(--nav_clr);
+  border: 2px solid var(--nav_clr);
 }
 
-#nav-button:hover {
-  background-color: #383838;
+#nav-button:hover,
+#nav-button:active {
+  background-color: var(--btn_hover_clr);
 }
 
-a {
+.header_btn {
   text-decoration: none;
-  color: #fff;
+  color: var(--btn_txt_clr);
   padding: 10px;
+  font-size: medium;
+  font-weight: 600;
 }
 
 h1 {
   flex-basis: 100%;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
 }
 
 #home-main {
@@ -96,8 +121,13 @@ main {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-top: 1vh;
+  margin-top: 2rem;
   /* min-height: 80vh; /*consider making smaller */
+  min-height: 70vh;
+}
+
+#main-el {
+  min-height: 30vh;
 }
 
 hr {
@@ -119,11 +149,12 @@ hr {
 .ticbox {
   height: 10vh;
   width: 30%;
-  background-color: rgb(187, 202, 202);
+  background-color: rgb(192, 173, 209);
   margin: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: ;
 }
 
 .tic_text {
@@ -148,6 +179,6 @@ hr {
   min-height: 0.5rem;
   min-width: 1rem;
   position: absolute;
-  left: 10vh;
-  bottom: 80vh;
+  left: 2%;
+  bottom: 65%;
 }
