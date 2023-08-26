@@ -77,8 +77,8 @@ nav {
   border-bottom-right-radius: 10px;
 }
 
-#nav-button {
-  min-height: 30px;
+.nav-button {
+  height: 40px;
   border-color: var(--nav_clr);
   background-color: var(--btn_clr);
   border-left: 1px solid var(--nav_clr);
@@ -86,8 +86,8 @@ nav {
   border: 2px solid var(--nav_clr);
 }
 
-#nav-button:hover,
-#nav-button:active {
+.nav-button:hover,
+.nav-button:active {
   background-color: var(--btn_hover_clr);
 }
 
@@ -154,7 +154,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: ;
+  /* position: ; */
 }
 
 .tic_text {

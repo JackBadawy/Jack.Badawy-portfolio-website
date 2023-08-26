@@ -4,31 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="colour_change.css" />
+    <title>Colour Changer</title>
+    <script src=""></script>
   </head>
-  <body>
-    <header>
-      <h1>Tic Tac Toe</h1>
-      <nav>
+  <body id="colour-change-body">
+    <header id="colour-change-header">
+      <h1>Colour Changer</h1>
+      <nav id="colour-change-nav">
         <button class="nav-button first_button">
           <a href="index.html" class="header_btn">Home</a>
         </button>
         <button class="nav-button">
-          <a href="colour_changer.html" class="header_btn">Colour Changer</a>
+          <a href="tictactoe.html" class="header_btn">Tic Tac Toe</a>
         </button>
         <button class="nav-button">
           <a href="api_infograbber.html" class="header_btn">Api Info Grabber</a>
         </button>
+
         <button class="nav-button last_button">
           <a href="pic_slideshow.html" class="header_btn">Picture Slidshow</a>
         </button>
       </nav>
     </header>
-    <main id="main-el">
-      <script src="tictactoe.js" id="script-el"></script>
+
+    <main id="colour-changer-main-el">
+      <script src="colour_changer.js"></script>
     </main>
+
     <footer>
-      <hr />
+      <hr id="hr-el" />
       <p id="copy-paragraph">&copy;Jack Badawy 2023</p>
     </footer>
   </body>

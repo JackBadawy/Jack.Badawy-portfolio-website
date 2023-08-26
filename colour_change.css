@@ -1,0 +1,28 @@
+.color-button {
+  height: 30px;
+  min-width: 40px;
+  margin: 5px;
+  padding: 2px;
+}
+
+#blue {
+  background-color: blue;
+  color: aliceblue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#grey {
+  background-color: gray;
+  color: white;
+}
+
+#green {
+  background-color: greenyellow;
+}

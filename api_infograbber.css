@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
+  max-height: 25px;
 }
 
 #master-div {
@@ -35,8 +36,8 @@
   border: 1px solid black;
 }
 
-#evolves-from-paragraph {
-}
+/* #evolves-from-paragraph {
+} */
 
 #poke-image {
   height: 8rem;

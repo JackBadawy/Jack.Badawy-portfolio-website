@@ -99,5 +99,3 @@ function displayInfo() {
   pokeImage.alt = searchBar.value;
   masterDiv.lastChild.after(pokeImage);
 }
-
-//everything is now ready to go, just need to add paragraphs to display relevant text
