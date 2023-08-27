@@ -15,8 +15,10 @@
   /*  Colours */
   /*--header_clr: #dca99e;*/
   --header_clr: #d66afb;
-  --light_clr: #feedff;
-  --dark_clr: #938de2;
+  --light_clr: #fee5ff;
+  /*old--dark_clr: #938de2;*/
+  /*darker old --dark_clr: #716cad; */
+  --dark_clr: #5c5984;
   --nav_clr: #68f7ff;
   --btn_clr: #e9caff;
   --btn_hover_clr: #ddc1f2;
@@ -135,6 +137,7 @@ nav {
 
 h1 {
   flex-basis: 100%;
+  opacity: 1;
 }
 
 h4 {
@@ -148,6 +151,26 @@ h4 {
 
 body {
   background-color: var(--light_clr);
+}
+
+#background-div {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+#background-image {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1980px;
+  height: 1080px;
+  opacity: 0.2;
+  background-size: cover;
+  pointer-events: none;
 }
 
 main {
@@ -170,6 +193,7 @@ ul {
 
 .home-body-link {
   color: var(--dark_clr);
+  font-weight: 700;
 }
 
 #main-el {
