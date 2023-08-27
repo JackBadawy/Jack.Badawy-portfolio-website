@@ -11,7 +11,7 @@
     <header>
       <h1>Jack's Portfolio Website</h1>
       <nav>
-        <button class="nav-button first_button">
+        <button class="nav-button" id="first_button">
           <a href="tictactoe.html" class="header_btn">Tic Tac Toe</a>
         </button>
         <button class="nav-button">
@@ -20,7 +20,7 @@
         <button class="nav-button">
           <a href="colour_changer.html" class="header_btn">Colour Changer</a>
         </button>
-        <button class="nav-button last_button">
+        <button class="nav-button" id="last_button">
           <a href="pic_slideshow.html" class="header_btn">Picture Slidshow</a>
         </button>
       </nav>
@@ -28,15 +28,33 @@
     <main id="home-main">
       <h2>Welcome to my portfolio website!</h2>
       <h3>This is place to display what I have been working on</h3>
-      <h4>Here you will find:</h4>
-      <p>Tic Tac Toe</p>
-      <p>a script that retrieves user searched info from an offsite api</p>
-      <p>
-        a script that allows the user to change the color pallete of the website
-      </p>
-      <p>a scrollable picture slideshow</p>
+
+      <article id="project_list_container">
+        <h4>Here you will find:</h4>
+        <ul>
+          <li>
+            <a href="tictactoe.html" class="home-body-link">Tic Tac Toe</a>
+          </li>
+          <li>
+            <a href="api_infograbber.html" class="home-body-link"
+              >a script that retrieves user searched info from an offsite api</a
+            >
+          </li>
+          <li>
+            <a href="colour_changer.html" class="home-body-link">
+              a script that allows the user to change the color pallete of the
+              website
+            </a>
+          </li>
+          <li>
+            <a href="pic_slideshow.html" class="home-body-link"
+              >a scrollable picture slideshow</a
+            >
+          </li>
+        </ul>
+      </article>
     </main>
-    <!--write what you currently have on this portfolio-->
+
     <footer>
       <hr />
       <p id="copy-paragraph">&copy;Jack Badawy 2023</p>
