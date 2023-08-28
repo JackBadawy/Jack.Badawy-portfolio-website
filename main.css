@@ -72,7 +72,7 @@ main h3 {
 h4 {
   padding: 2px;
   padding-top: 5px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
@@ -195,11 +195,18 @@ ul {
   padding: 5px;
 }
 
-.home-body-link {
-  color: var(--dark_clr);
-  font-weight: 700;
+li {
+  margin-bottom: 1rem;
 }
 
+.home-body-link {
+  color: var(--dark_clr);
+  font-weight: 600;
+}
+
+#project_list_header {
+  font-weight: 700;
+}
 #main-el {
   /*   min-height: 30vh; */
   display: block;
