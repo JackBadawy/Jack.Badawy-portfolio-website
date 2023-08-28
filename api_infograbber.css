@@ -35,6 +35,10 @@ b {
   margin-bottom: 2rem;
 }
 
+#api_suggestion_para {
+  font-weight: 700;
+}
+
 #search-container {
   flex-basis: 100%;
   display: flex;
