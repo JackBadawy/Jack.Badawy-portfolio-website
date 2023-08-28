@@ -30,7 +30,8 @@ function apiInitialize() {
 }
 
 searchBtn.addEventListener("click", function () {
-  pokeApi = "https://pokeapi.co/api/v2/pokemon/" + searchBar.value;
+  pokeApi =
+    "https://pokeapi.co/api/v2/pokemon/" + searchBar.value.toLowerCase();
 
   getData();
 });

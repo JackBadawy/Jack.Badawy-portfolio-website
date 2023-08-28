@@ -59,9 +59,9 @@ function changeColor(darkClr, lightClr) {
   headerEl.style.backgroundColor = lightClr;
   navEl.style.backgroundColor = darkClr;
   for (i = 0; i < navBtnEl.length; i++) {
-    navBtnEl[i].style.backgroundColor = lightClr;
-    navBtnEl[i].style.borderColor = darkClr;
-    aEl[i].style.color = darkClr;
+    navBtnEl[i].style.backgroundColor = darkClr;
+    navBtnEl[i].style.borderColor = lightClr;
+    aEl[i].style.color = lightClr;
   }
   bodyEl.style.backgroundColor = lightClr;
   hrEl[0].style.backgroundColor = darkClr;

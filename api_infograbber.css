@@ -4,10 +4,34 @@
   --dark_clr: #716cad;
 }
 
+main {
+  margin-left: 5px;
+}
+
 #main-para {
   margin-left: 1rem;
   margin-right: 1rem;
   color: var(--dark_clr);
+  margin-bottom: 2rem;
+}
+
+p,
+li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: var(--dark_clr);
+}
+
+u {
+  font-weight: 700;
+}
+
+b {
+  font-weight: 800;
+}
+
+#suggestion_list {
+  list-style: disc;
   margin-bottom: 2rem;
 }
 
@@ -30,9 +54,14 @@ input::placeholder {
 }
 
 input:focus,
+input:active,
 input::selection {
   background-color: var(--light_clr);
   color: var(--dark_clr);
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 #search-btn {
@@ -66,6 +95,7 @@ input::selection {
 
 #name-paragraph {
   border: 1px solid var(--dark_clr);
+  border-top: none;
   color: var(--dark_clr);
 }
 

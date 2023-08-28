@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   font-family: system-ui, roboto;
+  font-weight: 500;
 }
 
 :root {
@@ -21,7 +22,7 @@
   --dark_clr: #5c5984;
   --nav_clr: #68f7ff;
   --btn_clr: #e9caff;
-  --btn_hover_clr: #ddc1f2;
+  --btn_hover_clr: #474566;
   --h1_clr: #423f3f;
   --btn_txt_clr: #8030ba;
   /* --body_clr: #fbf5ef; */ /* bone white */
@@ -320,5 +321,3 @@ hr {
     max-width: min-content;
   }
 }
-
-@media screen and (max-width: 525px);
