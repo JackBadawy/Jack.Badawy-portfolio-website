@@ -7,6 +7,8 @@ let bodyEl = document.getElementById("colour-change-body");
 let hrEl = document.getElementsByTagName("hr");
 let h1El = document.getElementsByTagName("h1");
 let copyParagraphEl = document.getElementsByTagName("p");
+let fisrtBtn = document.getElementById("first_button");
+let lastBtn = document.getElementById("last_button");
 
 let buttonContainer = document.createElement("div");
 let buttonColors = ["green", "blue", "yellow", "orange", "grey"];
@@ -60,13 +62,17 @@ function changeColor(darkClr, lightClr) {
   navEl.style.backgroundColor = darkClr;
   for (i = 0; i < navBtnEl.length; i++) {
     navBtnEl[i].style.backgroundColor = darkClr;
-    navBtnEl[i].style.borderColor = lightClr;
+    navBtnEl[i].style.borderColor = darkClr;
+    navBtnEl[i].style.borderLeftColor = lightClr;
+    navBtnEl[i].style.borderRightColor = lightClr;
     aEl[i].style.color = lightClr;
   }
   bodyEl.style.backgroundColor = lightClr;
   hrEl[0].style.backgroundColor = darkClr;
   h1El[0].style.color = darkClr;
   copyParagraphEl[0].style.color = darkClr;
+  fisrtBtn.style.borderLeftColor = darkClr;
+  lastBtn.style.borderRightColor = darkClr;
 }
 
 // what elements we need to recolor: header, nav, btn, btn hover, btn text, body, hr
