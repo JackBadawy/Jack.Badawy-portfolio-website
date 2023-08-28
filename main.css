@@ -16,10 +16,10 @@
   /*  Colours */
   /*--header_clr: #dca99e;*/
   --header_clr: #d66afb;
-  --light_clr: #fee5ff;
+  --light_clr: #f5d2f6;
   /*old--dark_clr: #938de2;*/
   /*darker old --dark_clr: #716cad; */
-  --dark_clr: #5c5984;
+  --dark_clr: #49476b;
   --nav_clr: #68f7ff;
   --btn_clr: #e9caff;
   --btn_hover_clr: #474566;
@@ -170,8 +170,8 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 5616px;
-  height: 3744px;
+  width: 2560px;
+  height: 1440px;
   opacity: 0.2;
   background-size: cover;
   pointer-events: none;
