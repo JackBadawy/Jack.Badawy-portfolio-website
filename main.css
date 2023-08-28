@@ -39,6 +39,7 @@ h1 {
   padding: 20px;
   font-size: 60px;
   color: var(--dark_clr);
+  font-weight: 700;
 }
 
 h2 {
