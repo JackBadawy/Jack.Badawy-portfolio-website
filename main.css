@@ -114,9 +114,10 @@ nav {
   height: 40px;
   /* border-color: var(--nav_clr); */
   border-color: var(--dark_clr);
-  background-color: var(--light_clr);
-  border-left: 1px solid var(--dark_clr);
-  border-right: 1px solid var(--dark_clr);
+  /*  background-color: var(--light_clr); */
+  background-color: var(--dark_clr);
+  border-left: 1px solid var(--light_clr);
+  border-right: 1px solid var(--light_clr);
   border-style: solid;
   /* border: 2px solid var(--nav_clr); */
   /* border: 2px 2px 2px 2px, solid, var(--nav_clr); */
@@ -129,7 +130,8 @@ nav {
 
 .header_btn {
   text-decoration: none;
-  color: var(--dark_clr);
+  /* color: var(--dark_clr); */
+  color: var(--light_clr);
   padding: 10px;
   font-size: medium;
   font-weight: 600;
@@ -275,4 +277,48 @@ hr {
   text-align: center;
 }
 
-/* @media width 585px */
+@media screen and (max-width: 715px) {
+  #home_h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  #home_h1 {
+    font-size: 40px;
+  }
+  #home-main {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .header_btn {
+    font-size: 87%;
+    padding: 1px;
+    font-weight: 700;
+  }
+
+  #first_button {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #last_button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  nav {
+    margin: 0px 7px 0px 7px; /*change to 1 or 2 px*/
+  }
+  .nav-button {
+    min-width: 23%;
+    max-width: min-content;
+  }
+}
+
+@media screen and (max-width: 525px);
